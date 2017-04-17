@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_show_dialog_btn:
                 View outerView = LayoutInflater.from(this).inflate(R.layout.wheel_view, null);
                 WheelView wv = (WheelView) outerView.findViewById(R.id.wheel_view_wv);
-                wv.setOffset(2);
-                wv.setItems(Arrays.asList(PLANETS));
-                wv.setSeletion(3);
+                wv.setOffset(1);
+                wv.setNumberItems(0, 59);
+                wv.setSeletion(2);
                 wv.setOnWheelViewListener(new WheelView.OnWheelViewListener() {
                     @Override
                     public void onSelected(int selectedIndex, String item) {
